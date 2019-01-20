@@ -1,0 +1,77 @@
+.financial-instruments--f-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+.financial-instruments--f-col {
+  position: relative;
+  min-height: 1px;
+}
+.financial-instruments--f-row-hor-justify {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.financial-instruments--f-row-ver-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.financial-instruments--trend {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+.financial-instruments--trend-up {
+  border-width: 0 0.37em 0.5em 0.37em;
+  border-color: transparent transparent green transparent;
+  top: -0.1em;
+}
+.financial-instruments--trend-down {
+  border-width: 0.5em 0.37em 0 0.37em;
+  border-color: red transparent transparent transparent;
+  top: -0.1em;
+}
+.financial-instruments---trend-flat {
+  background-color: gray;
+  border-radius: 50%;
+  width: 0.5em;
+  height: 0.5em;
+}
+.financial-instruments--flag-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.financial-instruments--flag-icon-16 {
+  top: -0.06em;
+}
+.financial-instruments--color-up {
+  color: green;
+}
+.financial-instruments---color-down {
+  color: red;
+}
+/*# sourceMappingURL=frontend.css.map */

@@ -1,0 +1,26 @@
+.@{plugin_prefix}trend {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  margin-left: .3em;
+  margin-right: .3em;
+}
+
+.@{plugin_prefix}trend-up {
+  border-width: 0 .37em .5em .37em;
+  border-color: transparent transparent green transparent;
+  top: -.1em;
+}
+.@{plugin_prefix}trend-down {
+  border-width: .5em .37em 0 .37em;
+  border-color: red transparent transparent transparent;
+  top: -.1em;
+}
+.@{plugin_prefix}-trend-flat {
+  background-color: gray;
+  border-radius: 50%;
+  width: .5em;
+  height: .5em;
+}

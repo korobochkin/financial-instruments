@@ -1,0 +1,29 @@
+<p>{{ form_label(form.title) }}
+    {{ form_widget(form.title) }}</p>
+
+<p>{{ form_label(form.base_currency) }}
+    {{ form_widget(form.base_currency) }}</p>
+<p class="description">{{ translations.base_currency_caption }}</p>
+
+<p>{{ form_label(form.currency_list) }}
+    {{ form_widget(form.currency_list) }}</p>
+<p class="description">{{ translations.currency_list_caption }}</p>
+
+<p>{{ form_label(form.flag_size) }}
+    {{ form_widget(form.flag_size) }}</p>
+
+<h3>{{ translations.table_headers }}</h3>
+
+<p>{{ form_label(form.table_headers_currencies) }}
+    {{ form_widget(form.table_headers_currencies) }}</p>
+
+<p>{{ form_label(form.table_headers_price) }}
+    {{ form_widget(form.table_headers_price) }}</p>
+
+<p>{{ form_label(form.table_headers_change) }}
+    {{ form_widget(form.table_headers_change) }}</p>
+
+<h3>{{ translations.caption }}</h3>
+
+<p>{{ form_widget(form.caption) }}
+    {{ form_label(form.caption) }}</p>

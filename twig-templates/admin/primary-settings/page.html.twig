@@ -1,0 +1,42 @@
+<div class="wrap">
+
+    {% use 'admin/common/wordpress-settings-parts.html.twig' %}
+
+    {{ block('wordpress_page_title') }}
+
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        {{ block('wordpress_form_table_start') }}
+            {{ block('wordpress_form_table_tr_start') }}
+
+            {{ block('wordpress_form_table_th_start') }}
+                {{ form_label(form.fixer_api_key) }}
+            {{ block('wordpress_form_table_th_end') }}
+
+            {{ block('wordpress_form_table_td_start') }}
+                {{ form_widget(form.fixer_api_key) }}
+            {{ block('wordpress_form_table_td_end') }}
+
+            {{ block('wordpress_form_table_tr_end') }}
+
+
+            {{ block('wordpress_form_table_tr_start') }}
+
+            {{ block('wordpress_form_table_th_start') }}
+                {{ form_label(form.time_frame) }}
+            {{ block('wordpress_form_table_th_end') }}
+
+            {{ block('wordpress_form_table_td_start') }}
+                {{ form_widget(form.time_frame) }}
+                <p>{{ translations.time_frame_caption }}</p>
+            {{ block('wordpress_form_table_td_end') }}
+
+            {{ block('wordpress_form_table_tr_end') }}
+        {{ block('wordpress_form_table_end')  }}
+
+        <p class="submit">{{ form_widget(form.submit) }}</p>
+
+    {{ form_end(form) }}
+
+</div>
