@@ -1,0 +1,23 @@
+stages:
+  - test
+  - deploy
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+.composer_cache: &composer_cache
+  cache:
+    directories:
+      - $HOME/.composer/
+      - ./vendor/
+
+matrix:
+  include:
+    - name: 'PHP Code Sniffer'
+      before_script: composer install --quiet --no-interaction --no-scripts --optimize-autoloader --classmap-authoritative;
+      script: vendor/bin/phpcs --standard=phpcs.ruleset.xml
+      language: php
+      php: 7
+      <<: *composer_cache

@@ -10,9 +10,14 @@
             "homepage": "https://korobochkin.com"
         }
     ],
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
+    },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.5.9",
+        "php": "^5.6",
         "korobochkin/wp-kit": "^0.11.0",
         "guzzlehttp/guzzle": "^6.3",
         "donquixote/cellbrush": "^1.0"
